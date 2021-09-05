@@ -1,5 +1,4 @@
-﻿using System;
-using AbstractFactory.furnitures;
+﻿using AbstractFactory.furnitures;
 
 namespace AbstractFactory
 {
