@@ -7,17 +7,15 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            var myHome = new Home();
-            myHome.CreateChair()
-                .ChairLegs(4)
-                .ChairModel("xama123")
-                .ChairName("my chair");
+            var classicHome = HomeFactory.ClassicalHome();
 
-            myHome.CreateTable()
-                .TableColor("Red")
-                .TableLegs(4)
-                .TableModel("tb123");
-            
+            classicHome.CreateChair()
+                .ChairName("mdch13")
+                .ChairLegs(4);
+
+            classicHome.CreateTable()
+                .TableColor("Green")
+                .TableLegs(5);
         }
     }
 }
