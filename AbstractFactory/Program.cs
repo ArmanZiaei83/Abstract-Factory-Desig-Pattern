@@ -7,7 +7,7 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            var classicHome = HomeFactory.ClassicalHome();
+            var classicHome = new HomeFactory().ClassicalHome();
 
             classicHome.CreateChair()
                 .ChairName("mdch13")

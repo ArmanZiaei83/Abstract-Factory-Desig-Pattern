@@ -1,14 +1,13 @@
 namespace AbstractFactory.furnitures
 {
-    public class HomeFactory
+    public class HomeFactory : IHomeFactory
     {
-
-        public static ModernHome ModernHome()
+        public ModernHome ModernHome()
         {
             return new ModernHome();
         }
-        
-        public static ClassicHome ClassicalHome()
+
+        public ClassicHome ClassicalHome()
         {
             return new ClassicHome();
         }
